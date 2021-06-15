@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Constellations" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="450dp"
+        android:layout_height="748dp"
+        android:contentDescription="@string/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_a8ef13138985d1fbfea6ad40c00c6d" />
+
+    <TextView
+        android:id="@+id/flowers"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/two"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/按钮1"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="88dp"
+        android:onClick="openTwo"
+        android:text="@string/按钮1"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowers" />
+
+    <Button
+        android:id="@+id/按钮2"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="88dp"
+        android:onClick="openOne"
+        android:text="@string/按钮2"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/按钮1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
